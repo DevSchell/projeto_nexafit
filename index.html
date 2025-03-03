@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
-    
+    <link rel="icon" href="images/logo-comfundo.png">
     
     <link rel="stylesheet" href="styles.css"> </head>
     <title>NexaFit - Landing Page</title>
@@ -32,7 +32,7 @@
             <img class="imagem-hero" src="images/Running-amico.png" alt="">
         </div>
 
-        <a href="#" style="text-decoration: none; color: white;"><button class="cto-hero"><h1 style="color: white;">COMECE AGORA</h1></a></button>
+        <a href="#cadastro" style="text-decoration: none; color: white;"><button class="cto-hero"><h1 style="color: white;">COMECE AGORA</h1></a></button>
     </section>
 
     <section class="beneficios">
@@ -82,20 +82,82 @@
     </section>
 
     <section class="depoimentos"> 
+        <h1>Depoimentos</h1>
+        <h2 class="text" style="font-size: 40px;">O que nossos usuários dizem sobre a NexaFit</h2>
+        <h3 class="text" style="color: rgb(148, 148, 148); font-size: 25px; max-width: 30%;">Milhares de pessoas já transformaram sua rotina de treinos com a NexaFit. Veja o que elas dizem:</h3>
 
+        <div class="comentario-container">
+            <div class="comentario">
+                <p>“Nunca gostei de treinos genéricos. Com a NexaFit, cada sessão é personalizada para o meu ritmo. Evoluí muito mais rápido!” <br>
+                    <strong>Marcos Lima, 32 anos</strong></p>
+            </div>
+            <div class="foto">
+                <img src="images/Self confidence-bro (1).png" alt="foto-de-perfil" style="width: 10vh;">
+            </div>
+        </div>
+
+        <div class="comentario-container">
+            <div class="foto">
+                <img src="images/Self confidence-pana (1).png" alt="foto-de-perfil" style="width: 10vh;">
+            </div>
+            <div class="comentario">
+                <p>“Sempre tive dificvuldade em manter a disciplina nos treinos, mas a NexaFit tornou isso muito mais fácil! A IA ajusta o treino pra mim e eu só preciso seguir. Estou amando!” <br>
+                    <strong>Ana Oliveira, 27 anos</strong></p>
+            </div>
+        </div>
+
+        <div class="comentario-container">
+            <div class="comentario">
+                <p>“Economizei dinheiro e tempo. Agora treino quando e onde quiser, sem precisar de academia. A personalização da IA é incrível” <br>
+                    <strong>Carla Souza, 24 anos</strong></p>
+            </div>
+            <div class="foto">
+                <img src="images/Reading glasses-pana.png" alt="foto-de-perfil" style="width: 10vh;">
+            </div>
+        </div>
     </section>
 
     <section class="cto">
-
+        <h1>Descubra você mesmo!</h1>
+        <h2 class="text" style="font-size: 40px;">Teste grátis por 7 dias e descubra seu treino ideal!</h2>
+        <h3 class="text" style="color: rgb(148, 148, 148); font-size: 25px; max-width: 30%;">Comece agora e tenha um plano de treino personalizado criado pela nossa IA. É grátis, sem compromisso!</h3>
+        <h1>CADASTRE-SE AGORA MESMO LOGO ABAIXO!</h1>
     </section>
-
-    <form class="cadastro-gratis">
-
+    
+    <form id="cadastro" class="cadastro-gratis">
+        <h1 style="color: rgb(33, 196, 93);">Formulário de Cadastro</h1>
+        
+        <label for="nome">Nome Completo: </label>
+        <input type="text" id="nome" name="nome">
+        <br>
+        
+        <label for="email">Insira seu e-mail:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        
+        <label for="objetivo">Objetivo principal</label>
+        <select name="objetivo" id="objetivo" required>
+            <option value="" selected disabled>Selecione</option>
+            <option value="emagrecer">Emagrecer</option>
+            <option value="definir-musculos">Definir músculos</option>
+            <option value="ganhar-massa">Ganhar massa muscular</option>
+            <option value="melhorar-cond">Melhorar condicionamento físico</option>
+            <option value="melhorar-saude">Melhorar saúde e bem-estar</option>
+        </select>
+        <br>
+        
+        <label for="experiencia">Informe sua experiência com musculação: </label> <br>
+        <input type="radio" id="iniciante" name="experiencia" value="iniciante">
+        <label for="iniciante">Iniciante</label>
+        <input type="radio" id="intermediario" name="experiencia" value="intermediario">
+        <label for="intermediario">Intermediário</label>
+        <input type="radio" id="avancado" name="experiencia" value="avancado">
+        <label for="avancado">Avançado</label><br> 
+        <a href="#" style="text-decoration: none; color: white;"><button class="cto-hero"><h1 style="color: white;">COMECE AGORA GRATUITAMENTE</h1></a></button>        
     </form>
 
     <footer>
-        
-
+        <div class="blue-bar"></div>
     </footer>
 </body>
 </html>

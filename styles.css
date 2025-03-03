@@ -1,4 +1,7 @@
 /* Geral */
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0; 
     font-family: Arial, sans-serif;
@@ -23,7 +26,7 @@ header {
 }
 
 .logo-container {
-    background-color: white; 
+    background-color: rgb(228, 230, 235); 
     width: 150px; 
     height: 150px; 
     border-radius: 50%; 
@@ -199,4 +202,36 @@ section {
 }
 
 /* SEÇÃO DEPOIMENTOS */
+.comentario-container {
+    display: flex;
+    margin: 20px;
+}
 
+.comentario {
+    background-color: rgb(33, 196, 93);
+    width: 100vh;
+    padding:20px;
+    border-radius: 25px;
+    color: white;
+}
+
+.comentario strong {
+    color: #1e3a8a;
+    font-weight: 700;
+}
+
+.foto {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #1e3a8a;
+    border-radius: 25px;
+    margin: 5px;
+}
+/* SEÇÃO FORMS */
+.cadastro-gratis {
+    text-align: center;
+    margin: 20vh;
+    color: #1e3a8a;
+    font-weight: 600;
+    font-size: 30px;
+}
